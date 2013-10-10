@@ -1,0 +1,84 @@
+div.rs-select-wrapper {
+	cursor: pointer;
+	border: 1px solid #ccc;
+	height: 24px;
+	padding-right: 31px;
+	position: relative;
+	-moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+
+  /*
+    Introduced in IE 10.
+    See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+  */
+  -ms-user-select: none;
+	user-select: none;
+}
+
+div.rs-select-wrapper,
+div.rs-select-wrapper div.rs-select-base,
+div.rs-select-wrapper div.rs-select-triangle {
+	display: inline-block;
+}
+
+div.rs-select-wrapper div.rs-select-base {
+	line-height: 24px;
+	margin-left: 5px;
+}
+
+div.rs-select-wrapper div.rs-select-triangle {
+	background: url('dropdown.png') no-repeat 0 0;
+	width: 26px;
+	height: 26px;
+	position: absolute;
+	right: -1px;
+	top: -1px;
+}
+
+div.rs-select-wrapper.rs-select-open div.rs-select-triangle {
+	background: url('dropup.png') no-repeat 0 0;
+}
+
+div.rs-select-wrapper ul, div.rs-select-wrapper li {
+	padding: 0;
+	margin: 0;
+}
+
+ul.rs-select {
+	display: none;
+	max-height: 300px;
+	border: 1px solid #ccc;
+	border-right-color: #777;
+	border-bottom-color: #777;
+	/* background: url(); down arrow image url */
+}
+
+ul.rs-select > li.rs-option:first-child,
+ul.rs-select > li:first-child > ul > li:first-child {
+	padding-right: 25px;
+}
+
+ul.rs-select li {
+	list-style-type: none;
+}
+
+li.rs-optgroup img {
+	margin-right: 5px;
+}
+
+li.rs-optgroup li.rs-option {
+	text-indent: 25px;
+}
+
+ul.rs-optgroup li:first-child {
+	text-indent: 0px;
+}
+
+div.rs-select-open li.rs-option:hover {
+	background-color: #c66;
+}
+
+ul.rs-optgroup li:first-child:hover {
+	background-color: inherit;
+}
