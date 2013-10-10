@@ -1,7 +1,15 @@
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;/*unnecessary in new webkit browsers */
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 div.rs-select-wrapper {
 	cursor: pointer;
 	border: 1px solid #ccc;
-	height: 24px;
+	height: 26px;
 	padding-right: 31px;
 	position: relative;
 	-moz-user-select: -moz-none;
