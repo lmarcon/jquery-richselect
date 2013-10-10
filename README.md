@@ -32,3 +32,5 @@ $(function(){
 ### Demo
 
 [http://lmarcon.github.io/jquery-richselect/](http://lmarcon.github.io/jquery-richselect/)
+
+Tested on: Chrome, Firefox, IE8+
