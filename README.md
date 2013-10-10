@@ -5,9 +5,9 @@ Image/HTML support in select options and opgroups
 
 ### Quick usage
 
-   $(function(){
-   		$('#mySelect').richselect();
-   });
+    $(function(){
+    		$('#mySelect').richselect();
+    });
 
 ### Markup
 
