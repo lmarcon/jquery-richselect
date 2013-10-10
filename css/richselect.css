@@ -1,7 +1,15 @@
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;/*unnecessary in new webkit browsers */
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 div.rs-select-wrapper {
 	cursor: pointer;
 	border: 1px solid #ccc;
-	height: 24px;
+	height: 26px;
 	padding-right: 31px;
 	position: relative;
 	-moz-user-select: -moz-none;
@@ -23,7 +31,7 @@ div.rs-select-wrapper div.rs-select-triangle {
 }
 
 div.rs-select-wrapper div.rs-select-base {
-	line-height: 24px;
+	line-height: 26px;
 	margin-left: 5px;
 }
 
@@ -45,13 +53,21 @@ div.rs-select-wrapper ul, div.rs-select-wrapper li {
 	margin: 0;
 }
 
+div.rs-select-wrapper,
+ul.rs-select {
+	min-width: 150px;
+}
+
 ul.rs-select {
 	display: none;
 	max-height: 300px;
 	border: 1px solid #ccc;
 	border-right-color: #777;
 	border-bottom-color: #777;
-	/* background: url(); down arrow image url */
+	position: absolute;
+	background: #fff;
+	z-index: 1;
+	width: inherit;
 }
 
 ul.rs-select > li.rs-option:first-child,
