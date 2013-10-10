@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+	 <head>
+		  <title></title>
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+			<link rel="stylesheet" type="text/css" href="css/richselect.css">
+			<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+			<script type="text/javascript" src="js/richselect.js"></script>
+			<script>
+				$(function(){
+					$('.richs').richselect();
+				});
+			</script>
+			<style>
+				.w300 { width: 300px; }
+			</style>
+	 </head>
+	 <body>
+		 <form method="get" action="">
+			<select id="mySelect" class="richs w300">
+				<option value="-1">Select your option</option>
+				<optgroup data-icon="imgs/administrator.png" label="category 1">
+					<option>val1</option>
+					<option value="myVal2">val2</option>
+					<option selected="selected">val3</option>
+				</optgroup>
+				<optgroup data-icon="imgs/angel.png" label="category 2">
+					<option>val4</option>
+					<option>val5</option>
+				</optgroup>
+				<option>val6</option>
+			</select>
+
+			<br />
+			<br />
+			
+			<select id="mySelect2" class="richs">
+				<option value="-1">Select your option</option>
+				<optgroup data-icon="imgs/administrator.png" label="category 1">
+					<option>val1</option>
+					<option value="myVal2">val2</option>
+					<option>val3</option>
+				</optgroup>
+				<optgroup data-icon="imgs/angel.png" label="category 2">
+					<option selected="selected">val4</option>
+					<option>val5</option>
+				</optgroup>
+				<option>val6</option>
+			</select>
+		</form>
+	 </body>
+</html>
