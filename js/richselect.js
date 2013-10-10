@@ -57,12 +57,21 @@
 			self.$richselect.addClass(self.$elem.attr('class'));
 		}
 
+		self._close = function(){
+				self.$richselect.removeClass('rs-select-open').find('ul.rs-select').hide();
+		}
+
+		self._open = function(){
+				self.$richselect.addClass('rs-select-open').find('ul.rs-select').show();
+		}
+
 		function select_click_event(e){
 			if( $(this).hasClass('rs-select-open') ){
 				// add animate here for a smoother slide effect
-				$(this).removeClass('rs-select-open').find('ul.rs-select').hide();
+				self._close();
 			} else {
-				$(this).addClass('rs-select-open').find('ul.rs-select').show();
+				$('.rs-select-open').click();
+				self._open();
 			}
 		}
 
