@@ -77,7 +77,15 @@ ul.rs-select > li:first-child > ul > li:first-child {
 
 ul.rs-select li {
 	list-style-type: none;
+}
+
+ul.rs-select div.rs-option-content {
 	margin: 0 3px;
+}
+
+li.rs-optgroup-content {
+	background: #eee;
+	color: #444;
 }
 
 li.rs-optgroup img {
