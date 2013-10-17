@@ -11,7 +11,9 @@
 
 		self.options = $.extend({}, defaults, options);
 
-		init();
+		if( !self.$elem.hasClass("rs-already") ){
+			init();
+		}
 
 		function init(){
 			var rs = '';
@@ -48,7 +50,7 @@
 			}
 			rs += '</ul></li></div>';
 
-			self.$elem.hide().after(rs);
+			self.$elem.addClass("rs-already").hide().after(rs);
 			self.$richselect = self.$elem.next("div.rs-select-wrapper");
 
 			self.$richselect.on('click', 'li.rs-option', option_click_event);
