@@ -44,7 +44,7 @@
 					rs += currentOptgroupLabel + '</li>';
 				}
 				
-				rs += '<li class="rs-option" data-value="' + opt.value + '">' + opt.text + '</li>';
+				rs += '<li class="rs-option" data-value="' + opt.value + '"><div class="rs-option-content">' + opt.text + '</div></li>';
 			}
 			rs += '</ul></li></div>';
 
