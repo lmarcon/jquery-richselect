@@ -68,6 +68,7 @@ ul.rs-select {
 	background: #fff;
 	z-index: 1;
 	width: inherit;
+	overflow: auto;
 }
 
 ul.rs-select > li.rs-option:first-child,
