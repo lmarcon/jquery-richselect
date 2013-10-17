@@ -55,6 +55,10 @@
 			self.$richselect.on('click', 'li.rs-optgroup', optgroup_click_event);
 			self.$richselect.on('click', '', select_click_event);
 			self.$richselect.addClass(self.$elem.attr('class'));
+
+			$('html').click(function() {
+				self._close();
+			});
 		}
 
 		self._close = function(){
@@ -72,12 +76,14 @@
 			} else {
 				$('.rs-select-open').click();
 				self._open();
+				e.stopPropagation();
 			}
 		}
 
 		function option_click_event(){
 			self.$elem.val($(this).data('value'));
 			self.$richselect.find('.rs-select-base').html($(this).html());
+			self.$elem.trigger('onchange');
 		}
 
 		function optgroup_click_event(e){
